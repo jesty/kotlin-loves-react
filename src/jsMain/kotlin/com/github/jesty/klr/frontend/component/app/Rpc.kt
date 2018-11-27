@@ -1,13 +1,17 @@
-package com.starter.frontend.component.app
+package com.github.jesty.klr.frontend.component.app
 
-import com.starter.common.Movie
+import com.github.jesty.klr.Movie
 import org.w3c.fetch.RequestInit
 import kotlin.browser.window
 import kotlin.js.Promise
 import kotlin.js.json
 
 fun loadMovies(): Promise<List<Movie>> =
-    getAndParseResult("http://localhost:8080/movies", null, ::parseToSnippets)
+    getAndParseResult(
+        "http://localhost:8080/movies",
+        null,
+        ::parseToSnippets
+    )
 
 private fun parseToSnippets(json: dynamic): List<Movie> {
     var result: MutableList<Movie> = mutableListOf()

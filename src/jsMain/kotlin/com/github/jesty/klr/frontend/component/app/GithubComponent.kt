@@ -1,4 +1,4 @@
-package com.starter.frontend.component.app
+package com.github.jesty.klr.frontend.component.app
 
 import com.starter.githubapi.GitHub
 import com.starter.githubapi.Result

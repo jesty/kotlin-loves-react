@@ -1,6 +1,6 @@
-package com.starter.frontend.component.app
+package com.github.jesty.klr.frontend.component.app
 
-import com.starter.common.Movie
+import com.github.jesty.klr.Movie
 import react.RBuilder
 import react.RComponent
 import react.RProps

@@ -1,6 +1,6 @@
-package com.starter.frontend
+package com.github.jesty.klr.frontend
 
-import com.starter.frontend.component.app.app
+import com.github.jesty.klr.frontend.component.app.app
 import react.dom.render
 import kotlin.browser.document
 

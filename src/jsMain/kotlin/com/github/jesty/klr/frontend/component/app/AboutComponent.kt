@@ -1,6 +1,6 @@
-package com.starter.frontend.component.app
+package com.github.jesty.klr.frontend.component.app
 
-import com.starter.common.Greetings
+import com.github.jesty.klr.Greetings
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.style
 import kotlinx.html.title
@@ -13,6 +13,10 @@ interface AboutComponentState : RState {
 }
 
 class AboutComponent : RComponent<RProps, AboutComponentState>() {
+
+    override fun componentDidMount() {
+        println("Component did mount...")
+    }
 
     override fun RBuilder.render() {
 

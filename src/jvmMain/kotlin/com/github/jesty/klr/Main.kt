@@ -1,4 +1,4 @@
-package com.starter.common
+package com.github.jesty.klr
 
 import com.fasterxml.jackson.databind.SerializationFeature
 import io.ktor.application.call
