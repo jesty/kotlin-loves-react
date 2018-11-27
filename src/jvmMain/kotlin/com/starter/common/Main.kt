@@ -37,6 +37,10 @@ fun main(args: Array<String>) {
             get("/movies") {
                 call.respond(mapOf("movies" to synchronized(movies) { movies.toList() }))
             }
+
+            get("/greetings") {
+                call.respond(Greetings().sayGreetings())
+            }
         }
     }
     server.start(wait = true)
