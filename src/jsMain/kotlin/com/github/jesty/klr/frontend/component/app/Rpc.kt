@@ -32,7 +32,6 @@ fun <T> requestAndParseResult(method: String, url: String, body: dynamic, parse:
     val response = window.fetch(url, object : RequestInit {
         override var method: String? = method
         override var body: dynamic = body
-        //override var credentials: RequestCredentials? = "same-origin".asDynamic()
         override var headers: dynamic = json("Accept" to "application/json")
     })
 

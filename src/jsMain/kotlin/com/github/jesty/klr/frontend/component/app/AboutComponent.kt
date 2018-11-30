@@ -2,7 +2,6 @@ package com.github.jesty.klr.frontend.component.app
 
 import com.github.jesty.klr.Greetings
 import kotlinx.html.js.onClickFunction
-import kotlinx.html.style
 import kotlinx.html.title
 import react.*
 import react.dom.*
@@ -39,7 +38,7 @@ class AboutComponent : RComponent<RProps, AboutComponentState>() {
                         val alert: dynamic = js(
                             "{" +
                                     "showAlert:function(){" +
-                                    "window.alert('This is an alert made with \"js\" function. This function will retrun a dynamic.')" +
+                                    "window.alert('This is an alert made with \"js\" function. This function will return a dynamic.')" +
                                     "}" +
                                     "}"
                         )

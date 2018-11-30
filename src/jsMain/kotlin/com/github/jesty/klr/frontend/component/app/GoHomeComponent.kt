@@ -14,6 +14,7 @@ class GoHomeComponent : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         routeLink("/") { +"[Home]" }
     }
+
 }
 
 fun RBuilder.goHome() = child(GoHomeComponent::class) {

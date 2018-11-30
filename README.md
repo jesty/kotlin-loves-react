@@ -1,9 +1,18 @@
 
 ## Intro
 
-This projects shows how to setup a multi-platform application with Kotlin and React.
-This repository starts from: https://github.com/gbaldeck/react-js-jvm-kotlin-multiplatform, but it is extended writing some
-effective examples about Kotlin and React. There are some interaction with a simple REST API built using Ktor.
+This project shows how to setup a multi-platform application with Kotlin and React.
+This repository starts from: https://github.com/gbaldeck/react-js-jvm-kotlin-multiplatform, and it is extended writing some
+real examples. There are some interaction with a simple REST API built using Ktor.
+
+The features that you can see in the files are:
+
+* App.kt and IndexComponent.kt: React Router setup and use.
+* AboutComponent.kt: js function, external class (AlertHelper.kt), expect/actual class (Greetings.kt) and jsStyle function.
+* MyMoviesComponent.kt: a simple ui that iterates over an array.
+* MyMoviesRemoteComponent.kt and Rpc.kt: a simple ui that iterates over an array from a REST API.
+* GithubComponent.kt: an example on how to use an existing javascript library in Kotlin.
+* HeaderComponent.kt: a React component
 
 
 ## Kotlin/JS Module
