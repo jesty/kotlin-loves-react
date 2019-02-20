@@ -12,8 +12,9 @@ import react.router.dom.switch
 class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         h1("App-header") {
-            +"Hello Milan Codemotion 2018!!!"
+            +"Hello Pescara!!!"
         }
+
 
         hashRouter {
             switch {

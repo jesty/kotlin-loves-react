@@ -21,11 +21,6 @@ class AboutComponent : RComponent<RProps, AboutComponentState>() {
 
         header("About this project")
 
-        h3 {
-            +Greetings().sayGreetings()
-            attrs.title = "This string came from a Expected/Actual class"
-        }
-
         p {
             +"This projects shows how to use React with Kotlin!"
         }
@@ -73,14 +68,19 @@ class AboutComponent : RComponent<RProps, AboutComponentState>() {
             }
         }
 
+        h3 {
+            +Greetings().sayGreetings() //finally we meet again!
+            attrs.title = "This string came from a Expected/Actual class"
+        }
+
         goHome()
     }
 
     fun randomColor(): String {
-        val r = (0..255).random()
-        val g = (0..255).random()
-        val b = (0..255).random()
-        return "#${r.toString(16)}${g.toString(16)}${b.toString(16)}"
+        val r = (0..255).random().toString(16)
+        val g = (0..255).random().toString(16)
+        val b = (0..255).random().toString(16)
+        return "#$r$g$b"
     }
 }
 
