@@ -12,7 +12,7 @@ import react.router.dom.switch
 class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         h1("App-header") {
-            +"Hello Pescara!!!"
+            +"Hello Pescara KNight!!!"
         }
 
 
